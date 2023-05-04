@@ -18,6 +18,7 @@
 
 // // soluzione alternativa che non rimuove gli elementi dall'array originale
 
+// let array1 = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 // for (let i = 0; i < array1.length; i++) {
 //   arrayReversed.unshift(array1[i]);
 // }
