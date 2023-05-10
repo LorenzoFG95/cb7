@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url(./digital\ display\ tfb.ttf);
+}
+body {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  border: 2px solid;
+  background-color: rgb(52, 54, 75);
+  width: 210px;
+  height: 330px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator div {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-weight: bold;
+}
+.clear,
+.equal {
+  width: 90px;
+}
+
+.clear {
+  background-color: brown;
+  color: white;
+}
+
+.equal {
+  background-color: rgb(184, 49, 0);
+  color: white;
+}
+.display {
+  font-family: "MyWebFont";
+  outline: none;
+  background-color: black;
+  color: green;
+  height: 30px;
+  width: 190px;
+  font-size: 50px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
