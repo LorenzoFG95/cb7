@@ -1,0 +1,75 @@
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 149, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-y: hidden;
+}
+
+.cityForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.459);
+  background-color: rgba(0, 0, 0, 0.158);
+}
+
+.cityForm img {
+  top: 0;
+  position: relative;
+  width: 60px;
+  transition: top ease 0.5s;
+  cursor: pointer;
+  animation: upDown 0.45s ease-out 0s infinite alternate;
+}
+
+.cityForm img:hover {
+  filter: contrast(1.2) saturate(1.2);
+}
+
+.cityForm input {
+  border-radius: 12px;
+  padding: 5px 5px 5px 15px;
+  border: 1px solid lightgrey;
+  outline: none;
+}
+
+.cityForm input:nth-child(3) {
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.35s;
+}
+
+.cityForm input:nth-child(3):hover {
+  background-color: rgb(0, 149, 255);
+  color: white;
+}
+
+.temperature {
+  position: absolute;
+  top: 150px;
+  font-size: 5.4rem;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+@keyframes upDown {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
